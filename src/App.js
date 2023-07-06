@@ -3,14 +3,12 @@ import Greet from './components/Greet';
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Counter from './components/Counter';
-import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import ParentComponent from './ParentComponent';
 function App() {
   return (
     <div className="App">
       <ClassClick/>
-      <FunctionClick/>
       <ParentComponent/>
       {/* <Message/> */}
       {/* <Counter/> */}

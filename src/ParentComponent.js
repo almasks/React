@@ -1,15 +1,15 @@
 import React,{Component} from "react";
 import ChildComponent from "./ChildComponent";
 class ParentComponent extends Component{
-    constructor(props){
-        super(props)
+    constructor(){
+        super()
         this.state={
             parentName:"parent"
         }
         this.greetParent=this.greetParent.bind(this)
     }
-    greetParent(){
-        alert(`hello ${this.state.parentName}`)
+    greetParent(childName,grandchild){
+        alert(`Hello ${this.state.parentName} from ${childName} form ${grandchild}`)
     }
     render(){
         return(

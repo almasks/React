@@ -4,12 +4,22 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Counter from './components/Counter';
 import ClassClick from './components/ClassClick';
-import ParentComponent from './ParentComponent';
+import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
+import StyleSheet from './components/StylesSheet';
+import Inline from './components/Inline';
+import Form from './components/Form';
 function App() {
   return (
     <div className="App">
-      <ClassClick/>
-      <ParentComponent/>
+      <Form/>
+      {/* <Inline/> */}
+  {/* <StyleSheet primary={true}/> */}
+      {/* <NameList/> */}
+      {/* <UserGreeting/> */}
+      {/* <ClassClick/>
+      <ParentComponent/> */}
       {/* <Message/> */}
       {/* <Counter/> */}
 

@@ -15,11 +15,16 @@ import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import ParentComponentp from './components/ParentComponentp';
 import RefsDemo from './components/RefsDemo';
+import Input from './components/Input';
+import FocusInput from './components/FocusInput';
+import FRParent from './components/FRParent';
 function App() {
   return (
     <div className="App">
+      <FRParent/>
+      {/* <FocusInput/> */}
+      {/* <Input/> */}
       {/* <ParentComponentp/> */}
-      <RefsDemo/>
       {/* <Table/> */}
       {/* <FragmentDemo/> */}
       {/* <LifeCycleA/> */}

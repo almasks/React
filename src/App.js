@@ -23,17 +23,29 @@ import Hero from './components/Hero';
 import ErrorBoun from './components/ErrorBoun';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import CounterTwo from './components/CounterTwo';
 function App() {
   return (
     <div className="App">
-      <ClickCounter/>
-      <HoverCounter/>
-      {/* <ErrorBoun><Hero heroName="batman"/></ErrorBoun>
-      <Hero heroName="superman"/>
-<ErrorBoun>
+      <CounterTwo render={(count,incrementCount)=>
+      <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>}/>
+      <CounterTwo render={(count,incrementCount)=>
+      <HoverCounterTwo count={count} incrementCount={incrementCount}></HoverCounterTwo>}/>
+    
+      {/* <ClickCounterTwo/>
+      <HoverCounterTwo/>
+      <User render={(isLoggedIn)=>isLoggedIn?"vishwas":"Guest"}/>
+       {/* <ClickCounter name="vishwas"/> */}
+      {/* <HoverCounter/> */} 
+      {/* <ErrorBoun><Hero heroName="batman"/></ErrorBoun> */}
+       {/* <Hero heroName="superman"/> */}
+{/* <ErrorBoun>
         <Hero heroName="jocker"/>
   
-</ErrorBoun> */}
+ </ErrorBoun>  */}
       {/* <PortalDemo/> */}
       {/* <FRParent/> */}
       {/* <FocusInput/> */}

@@ -21,15 +21,19 @@ import FRParent from './components/FRParent';
 import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
 import ErrorBoun from './components/ErrorBoun';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 function App() {
   return (
     <div className="App">
-      <ErrorBoun><Hero heroName="batman"/></ErrorBoun>
+      <ClickCounter/>
+      <HoverCounter/>
+      {/* <ErrorBoun><Hero heroName="batman"/></ErrorBoun>
       <Hero heroName="superman"/>
 <ErrorBoun>
         <Hero heroName="jocker"/>
   
-</ErrorBoun>
+</ErrorBoun> */}
       {/* <PortalDemo/> */}
       {/* <FRParent/> */}
       {/* <FocusInput/> */}

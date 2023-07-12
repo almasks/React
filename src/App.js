@@ -18,10 +18,20 @@ import RefsDemo from './components/RefsDemo';
 import Input from './components/Input';
 import FocusInput from './components/FocusInput';
 import FRParent from './components/FRParent';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoun from './components/ErrorBoun';
 function App() {
   return (
     <div className="App">
-      <FRParent/>
+      <ErrorBoun><Hero heroName="batman"/></ErrorBoun>
+      <Hero heroName="superman"/>
+<ErrorBoun>
+        <Hero heroName="jocker"/>
+  
+</ErrorBoun>
+      {/* <PortalDemo/> */}
+      {/* <FRParent/> */}
       {/* <FocusInput/> */}
       {/* <Input/> */}
       {/* <ParentComponentp/> */}
